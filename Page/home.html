@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Analisis Sentimen</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+        }
+        textarea {
+            font-size: 16px;
+        }
+        input[type="submit"] {
+            font-size: 16px;
+            padding: 5px 10px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Form Analisis Sentimen Program Makan Bergizi Gratis</h2>
+
+    <form method="POST" action="/form">
+        <textarea name="text" rows="5" cols="60" placeholder="Tulis Tweet Anda..."></textarea><br><br>
+        <input type="submit" value="Prediksi Sentimen">
+    </form>
+
+    {% if input_text %}
+        <h3>Opini Anda:</h3>
+        <p>{{ input_text }}</p>
+        <h3>Hasil Sentimen:</h3>
+        <p><strong>{{ sentiment }}</strong></p>
+    {% endif %}
+</body>
+</html>
