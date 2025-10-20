@@ -1,0 +1,22 @@
+# Web app
+streamlit==1.39.0
+
+# Data handling
+pandas==2.2.2
+numpy==1.26.4
+
+# Text preprocessing & regex
+regex==2024.7.24
+nltk==3.9.1
+Sastrawi==1.0.1  # untuk stemming Bahasa Indonesia
+
+# Machine learning
+scikit-learn==1.5.2
+
+# Visualization
+matplotlib==3.9.2
+seaborn==0.13.2
+wordcloud==1.9.3
+
+# Model persistence
+joblib==1.4.2
