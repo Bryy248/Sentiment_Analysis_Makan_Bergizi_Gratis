@@ -35,3 +35,5 @@ if st.button("Prediksi Sentimen"):
             st.success(f"Sentimen: **{sentiment}**")
         except Exception as e:
             st.error(f"Terjadi kesalahan: {str(e)}")
+
+# rebuild full env 2025-10-20
