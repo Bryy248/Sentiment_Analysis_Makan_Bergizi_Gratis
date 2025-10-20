@@ -1,0 +1,14 @@
+name: Keep Streamlit Alive
+
+on:
+  schedule:
+    - cron: "*/30 * * * *"  # setiap 30 menit
+  workflow_dispatch:        # bisa dijalankan manual juga
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping Streamlit app
+        run: |
+          curl -s -o /dev/null -w "%{http_code}" https://NAMA-APP.streamlit.app
