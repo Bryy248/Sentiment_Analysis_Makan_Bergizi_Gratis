@@ -2,4 +2,4 @@
 Nama Anggota:
 - Brian Chang
 - Yabes Mikael Sibarani
-- Mary
+- Mary Anggita Priscilla
